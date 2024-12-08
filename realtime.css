@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.anime{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: "Madimi One";
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+}
+
+.animated-text {
+  font-size: 45px;
+  font-family: 'Work Sans'; 
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  z-index: 2; 
+  opacity: 1;
+}
+
+.letter {
+  display: inline-block;
+  opacity: 0;
+  animation: writeAnimation 2s cubic-bezier(0.4, 0, 0.2, 1) forwards, tracking-out-expand 5s forwards;
+  animation-delay: calc(0.1s * var(--index));
+  color: white;
+  font-family: 'Work Sans';
+}
+
+.first{
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  animation: fadeInZoomOut 2.7s forwards;
+  animation-delay: 0.7s;
+  height: 100px;
+  z-index: 1;
+}
+
+@keyframes tracking-out-expand {
+  0% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0.8;
+  }
+  80% {
+    letter-spacing: 1em;
+    opacity: 0.2;
+  }
+  100% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+}
+
+@keyframes writeAnimation {
+  0% {
+    transform: translateX(-10px);
+    color: blue;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(0);
+    visibility: hidden;
+  }
+}
+
+@keyframes fadeInZoomOut {
+  0% {
+    opacity: 0; /* Initial state, hidden */
+    transform:translateZ(-100px); /* Zoomed out */
+  }
+  50% {
+    opacity: 1; /* Fade in */
+    transform: scale(1) translateZ(0); /* Normal size, initial position */
+  }
+  75% {
+    opacity: 1; /* Maintain opacity while zooming forwards */
+    transform: scale(2) translateZ(100px); /* Zoomed in */
+  }
+  100% {
+    opacity: 0; /* Fade out */
+    transform: scale(2) translateZ(100px); /* Keep the final state */
+  }
+}
+#nonAnimatedContent {
+  display: none;
+}
+span{
+  font-family: 'Work Sans';
+  font-weight: 500;
+}

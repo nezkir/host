@@ -1,0 +1,33 @@
+
+.icons{
+    display: flex;
+    justify-content: center;
+}
+footer{
+    background-color: transparent;
+}
+.icons a{
+    text-decoration: none;
+    padding: 7.5px;
+    
+    margin: 45px;
+    border-radius: 100%;
+    margin-bottom: 50px;
+    background-color: white;
+    
+}
+.icons a i{
+    font-size: 2em;
+    color: black;
+    
+}
+.icons a:hover{
+    background-color: transparent;
+    transition: 0.5s;
+}
+.icons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+
+

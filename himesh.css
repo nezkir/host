@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    background-color:#1E1E1E;
+    
+    
+}
+
+.login-container{
+    width: 100%;
+    height: 100%;
+    background-color: #1E1E1E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    font-family: 'Work Sans';
+    
+}
+h1{
+    color: white;
+    font-size: 32px;
+    padding-top:25px;
+    padding-bottom: 0px;
+}
+.username{
+    background-color: transparent;
+    width: 225px;
+    padding: 10px;
+    border-radius: 20px;
+    outline: none;
+    border: 1px solid transparent;
+    transition: all 0.45s ease-in-out;
+    border-color: #C0C0C0;
+    border-width: 2.5px;
+    
+}
+.username:hover{
+    box-shadow: 0 0 15px #AAFF00;
+    border-color: #AAFF00;
+}
+input::placeholder{
+    transition: color 1s;
+    color:  #F5F5F5;
+    padding-left: 25px;
+
+}
+input:hover::placeholder{
+    color: white;
+}
+input:not(:hover) ::placeholder {
+    color: initial;
+}
+.password{
+    background-color: transparent;
+    width: 225px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    outline: none;
+    transition: all 0.45s ease-in-out;
+    border-color: #C0C0C0;
+    border-width: 2.5px;
+}
+.password:hover{
+    box-shadow: 0 0 15px #AAFF00;
+    border-color: #AAFF00;
+}
+.button{
+    background-color:#ec0404;
+    color: white;
+    width: 100px;
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.65s ease-in-out;
+    
+
+
+    }
+
+.button:hover{
+    color: #ec0404;
+    background-color: white;
+    box-shadow: 0 0 10px 1px white;
+}
+
+.login-register{
+    display: flex;
+    gap: 80px;
+    z-index: 1;
+
+}
+#log{
+    font-size: 14px;
+   color: rgb(255, 255, 255);
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: #7C0A02;
+    text-decoration-thickness: 2.9px;
+    text-underline-offset: 3.4px;
+   }
+#Reg{
+       font-size: 14px;
+       color: #C0C0C0;
+       border: none;
+       background: transparent;
+       cursor: pointer;
+
+
+   }
+
+.grid-2{
+    background-color: #1E1E1E;
+    color: white;
+
+
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 0px;
+}
+
+.wrapper{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+main{
+    flex: 1;
+}
+header{
+    height: 200px;
+}
+h1{
+    padding: 0px;
+}
+.grid-1{
+    position: relative;
+    overflow: hidden;
+}   
+.input-container i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white; 
+    pointer-events: none; 
+    
+    
+    
+}
+.input-container {
+    position: relative;
+    z-index: 1;
+    
+}
+.password-container i{
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white; 
+    pointer-events: none; 
+    
+}
+.password-container{
+    position: relative;
+    z-index: 1;
+}
+
+
+
+

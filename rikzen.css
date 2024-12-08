@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+.diagonal {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    margin-top: -600px;
+    margin-left: 210px;
+    z-index: 0;
+    
+    
+}
+.diagonal-image{
+    animation: rotate 100s linear infinite;
+    z-index: 0;
+    
+}
+
+
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.astro_con {
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: moveDiagonal 50s linear infinite;
+    z-index: 0;
+    
+}
+
+@keyframes moveDiagonal {
+    0%, 100% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    50% {
+        transform: translate(50vw, 49vh) rotate(360deg);
+    }
+}
+h1,.login-container,.button{
+    z-index: 1;
+}
+.username{
+    z-index: 1;
+}
+.password{
+    z-index:1;
+}
+
+.grid-1{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+.text-wrapper{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: grid;
+    padding-top: 25%;
+    text-align: center;
+    overflow: hidden;
+    font-family: 'Work Sans';
+}
+.text{
+    font-family: 'Work Sans';
+    z-index: 1;
+}
